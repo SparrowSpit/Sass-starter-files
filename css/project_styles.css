@@ -1,0 +1,1435 @@
+@-ms-viewport {
+  width: device-width;
+  zoom: 1;
+  max-zoom: 1;
+}
+@viewport {
+  width: device-width;
+  zoom: 1;
+  max-zoom: 1;
+}
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../sass/foundation_allianz/vendor/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../sass/foundation_allianz/vendor/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, ../sass/foundation_allianz/vendor/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, ../sass/foundation_allianz/vendor/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, ../sass/foundation_allianz/vendor/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, ../sass/foundation_allianz/vendor/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, ../sass/foundation_allianz/vendor/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, ../sass/foundation_allianz/vendor/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, ../sass/foundation_allianz/vendor/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, ../sass/foundation_allianz/vendor/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, ../sass/foundation_allianz/vendor/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, ../sass/foundation_allianz/vendor/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, ../sass/foundation_allianz/vendor/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, ../sass/foundation_allianz/vendor/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, ../sass/foundation_allianz/vendor/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, ../sass/foundation_allianz/vendor/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, ../sass/foundation_allianz/vendor/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, ../sass/foundation_allianz/vendor/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, ../sass/foundation_allianz/vendor/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, ../sass/foundation_allianz/vendor/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, ../sass/foundation_allianz/vendor/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, ../sass/foundation_allianz/vendor/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, ../sass/foundation_allianz/vendor/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, ../sass/foundation_allianz/vendor/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, ../sass/foundation_allianz/vendor/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, ../sass/foundation_allianz/vendor/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, ../sass/foundation_allianz/vendor/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, ../sass/foundation_allianz/vendor/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, ../sass/foundation_allianz/vendor/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, ../sass/foundation_allianz/vendor/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, ../sass/foundation_allianz/vendor/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, ../sass/foundation_allianz/vendor/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, ../sass/foundation_allianz/vendor/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, ../sass/foundation_allianz/vendor/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, ../sass/foundation_allianz/vendor/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, ../sass/foundation_allianz/vendor/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, ../sass/foundation_allianz/vendor/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, ../sass/foundation_allianz/vendor/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, ../sass/foundation_allianz/vendor/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, ../sass/foundation_allianz/vendor/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 13, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 21, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 32, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 37, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 46, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 60, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 71, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 81, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 89, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 104, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 112, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 123, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 132, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 148, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 162, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 178, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 184, ../sass/foundation_allianz/vendor/_html5-boilerplate-base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   Settings
+   ========================================================================== */
+/* ======== Variables ======== */
+/* ======== Mixins, Placeholders and Extends ======== */
+/* line 53, ../sass/foundation_allianz/_settings_allianz.scss */
+.btn-group-lg > .btn, .btn-lg {
+  transition: all 200ms ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Base Element Styles
+   ========================================================================== */
+/* line 5, ../sass/foundation_allianz/_base.scss */
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+/* ======== Typography ======== */
+/* line 14, ../sass/foundation_allianz/_base.scss */
+html, body {
+  font-family: 'PT Sans';
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* line 21, ../sass/foundation_allianz/_base.scss */
+h1 {
+  color: #666666;
+  letter-spacing: -.02em;
+}
+
+/* ==========================================================================
+   Global (Shared) Styles
+   ========================================================================== */
+/* line 5, ../sass/foundation_allianz/_global.scss */
+img,
+video,
+object {
+  max-width: 100%;
+}
+
+/* line 11, ../sass/foundation_allianz/_global.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 19, ../sass/foundation_allianz/_global.scss */
+.clear::before, .clear::after {
+  content: '';
+  display: table;
+}
+/* line 25, ../sass/foundation_allianz/_global.scss */
+.clear::after {
+  clear: both;
+}
+
+/* line 31, ../sass/foundation_allianz/_global.scss */
+.bold {
+  font-weight: bold;
+}
+
+@media print {
+  /* line 37, ../sass/foundation_allianz/_global.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
+/* ==========================================================================
+   General Page Styles
+   ========================================================================== */
+/* CSS Document */
+/* line 11, ../sass/project_styles.scss */
+p {
+  font-size: 1rem;
+}
+@media (min-width: 48rem) {
+  /* line 11, ../sass/project_styles.scss */
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ==========================================================================
+   Header/navbar Styles
+   ========================================================================== */
+/* line 24, ../sass/project_styles.scss */
+.navbar {
+  height: 130px;
+  border-bottom: solid 5px #dbdbdb;
+}
+@media (max-width: 48rem) {
+  /* line 24, ../sass/project_styles.scss */
+  .navbar {
+    height: 190px;
+  }
+}
+@media (max-width: 62rem) {
+  /* line 24, ../sass/project_styles.scss */
+  .navbar {
+    height: 180px;
+  }
+}
+
+/* line 38, ../sass/project_styles.scss */
+.navbar-default {
+  background-color: #ffffff;
+}
+
+/* line 42, ../sass/project_styles.scss */
+.navbar-collapse {
+  background-color: #ffffff;
+}
+
+/* line 46, ../sass/project_styles.scss */
+.header-title {
+  margin-top: 3rem;
+}
+@media (max-width: 62rem) {
+  /* line 46, ../sass/project_styles.scss */
+  .header-title {
+    margin-top: 1.5rem;
+  }
+}
+/* line 53, ../sass/project_styles.scss */
+.header-title p {
+  font-size: 1.375rem;
+  text-align: right;
+}
+@media (max-width: 62rem) {
+  /* line 53, ../sass/project_styles.scss */
+  .header-title p {
+    font-size: 0.93rem;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 62rem) {
+  /* line 53, ../sass/project_styles.scss */
+  .header-title p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 62rem) {
+  /* line 68, ../sass/project_styles.scss */
+  .logo-main {
+    text-align: center;
+    display: block;
+  }
+}
+
+/* line 75, ../sass/project_styles.scss */
+#navbar > ul > li > a {
+  line-height: 60px;
+}
+
+/* line 80, ../sass/project_styles.scss */
+.top-tagline {
+  display: block;
+}
+@media (min-width: 48rem) {
+  /* line 80, ../sass/project_styles.scss */
+  .top-tagline {
+    display: inline-block;
+  }
+}
+
+/* ==========================================================================
+   Main Content Styles
+   ========================================================================== */
+/* line 93, ../sass/project_styles.scss */
+.content {
+  padding-top: 10rem;
+  position: relative;
+}
+@media (max-width: 48rem) {
+  /* line 93, ../sass/project_styles.scss */
+  .content {
+    padding-top: 12rem;
+  }
+}
+
+/* line 150, ../sass/project_styles.scss */
+.intro-header {
+  color: #223E7D;
+  max-width: 37rem;
+  padding: 2rem 0 0;
+}
+@media (min-width: 25.875rem) {
+  /* line 150, ../sass/project_styles.scss */
+  .intro-header {
+    position: absolute;
+    left: 7%;
+    top: 12rem;
+    max-width: 15rem;
+  }
+}
+@media (min-width: 36.25rem) {
+  /* line 150, ../sass/project_styles.scss */
+  .intro-header {
+    top: 13rem;
+    max-width: 20rem;
+  }
+}
+@media (min-width: 46rem) {
+  /* line 150, ../sass/project_styles.scss */
+  .intro-header {
+    left: 6%;
+    top: 13rem;
+    max-width: 26rem;
+  }
+}
+@media (min-width: 62.5rem) {
+  /* line 150, ../sass/project_styles.scss */
+  .intro-header {
+    top: 15rem;
+    max-width: 31rem;
+  }
+}
+/* line 183, ../sass/project_styles.scss */
+.intro-header h2 {
+  font-weight: bold;
+  font-size: 2.75rem;
+}
+@media (max-width: 62rem) {
+  /* line 183, ../sass/project_styles.scss */
+  .intro-header h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 30rem) {
+  /* line 183, ../sass/project_styles.scss */
+  .intro-header h2 {
+    font-size: 1.5rem;
+  }
+}
+/* line 196, ../sass/project_styles.scss */
+.intro-header p {
+  font-size: 1.2rem;
+  line-height: 1.25;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+@media (min-width: 25.875rem) {
+  /* line 196, ../sass/project_styles.scss */
+  .intro-header p {
+    text-shadow: #D8EAF8 0px 0px 8px;
+  }
+}
+@media (min-width: 32.5rem) {
+  /* line 196, ../sass/project_styles.scss */
+  .intro-header p {
+    font-size: 1.275rem;
+  }
+}
+@media (min-width: 36.25rem) {
+  /* line 196, ../sass/project_styles.scss */
+  .intro-header p {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 46rem) {
+  /* line 196, ../sass/project_styles.scss */
+  .intro-header p {
+    font-size: 2.125rem;
+  }
+}
+@media (min-width: 62rem) {
+  /* line 196, ../sass/project_styles.scss */
+  .intro-header p {
+    font-size: 2.75rem;
+  }
+}
+
+/* line 226, ../sass/project_styles.scss */
+.intro {
+  padding: 0 15px;
+  margin-top: 1.75rem;
+}
+
+/* line 231, ../sass/project_styles.scss */
+.intro p {
+  font-size: 1rem;
+}
+@media (min-width: 48rem) {
+  /* line 231, ../sass/project_styles.scss */
+  .intro p {
+    font-size: 1.2rem;
+  }
+}
+
+/* line 241, ../sass/project_styles.scss */
+.intro-header:before {
+  content: "";
+  background: url("hero_mobile.jpg") no-repeat center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+@media (min-width: 25.875rem) {
+  /* line 241, ../sass/project_styles.scss */
+  .intro-header:before {
+    content: "";
+    background: none;
+    height: 0;
+  }
+}
+
+/* line 256, ../sass/project_styles.scss */
+.hero img {
+  display: none;
+}
+@media (min-width: 25.875rem) {
+  /* line 256, ../sass/project_styles.scss */
+  .hero img {
+    display: block;
+  }
+}
+
+/* line 264, ../sass/project_styles.scss */
+div.hero > img {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: .5s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: .5s;
+  -ms-animation-duration: 3s;
+  -ms-animation-delay: .5s;
+  -o-animation-duration: 3s;
+  -o-animation-delay: .5s;
+}
+
+/* line 279, ../sass/project_styles.scss */
+.callout {
+  border-top: 1px solid #4c6d8a;
+  border-bottom: 1px solid #4c6d8a;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* line 286, ../sass/project_styles.scss */
+.section-benefits {
+  margin-top: 3rem;
+}
+@media (min-width: 48rem) {
+  /* line 286, ../sass/project_styles.scss */
+  .section-benefits {
+    margin-top: 1rem;
+  }
+}
+
+/************************************************************************************
+EGS COLUMNS
+2 columns (on larger screens) of columns after intro text, stacked on small screens
+*************************************************************************************/
+/* line 299, ../sass/project_styles.scss */
+.testimonial, .agencies, .frequently, .training {
+  margin-top: 3%;
+}
+
+/* line 307, ../sass/project_styles.scss */
+.headcolums {
+  font-size: 1.6875rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 4% 0%;
+}
+@media (max-width: 48rem) {
+  /* line 307, ../sass/project_styles.scss */
+  .headcolums {
+    font-size: 1.375rem;
+  }
+}
+
+/* line 319, ../sass/project_styles.scss */
+.pro {
+  padding-right: 4%;
+}
+
+/* line 323, ../sass/project_styles.scss */
+.pro > h3 {
+  background-color: #4c6d8a;
+}
+
+/* line 326, ../sass/project_styles.scss */
+.plans {
+  padding: 0% 2%;
+}
+
+/* line 330, ../sass/project_styles.scss */
+.plans > h3 {
+  background-color: #338890;
+}
+
+/* line 338, ../sass/project_styles.scss */
+.columns-intro {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.2;
+  padding-top: 4%;
+}
+@media (min-width: 62rem) {
+  /* line 338, ../sass/project_styles.scss */
+  .columns-intro {
+    font-size: 1.15rem;
+  }
+}
+
+/* line 349, ../sass/project_styles.scss */
+div.row.egs > div.col-md-6 > ul > li {
+  margin-bottom: 2%;
+}
+
+/* line 353, ../sass/project_styles.scss */
+.egs ul {
+  font-size: 1rem;
+  padding-left: 1.125rem;
+}
+@media (min-width: 48rem) {
+  /* line 353, ../sass/project_styles.scss */
+  .egs ul {
+    font-size: 1.2rem;
+    padding-left: 2.5rem;
+  }
+}
+
+/************************************************************************************
+CTA	
+*************************************************************************************/
+/* line 367, ../sass/project_styles.scss */
+.callout {
+  margin-top: 7%;
+}
+
+/* line 371, ../sass/project_styles.scss */
+#agentmax > div.row.text-center > div > h3 {
+  color: #666666;
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: -.01em;
+  margin: 3% auto;
+  max-width: 66rem;
+  line-height: 1.275;
+}
+@media (min-width: 48rem) {
+  /* line 371, ../sass/project_styles.scss */
+  #agentmax > div.row.text-center > div > h3 {
+    font-size: 1.375rem;
+    line-height: 1.35;
+  }
+}
+@media (min-width: 62rem) {
+  /* line 371, ../sass/project_styles.scss */
+  #agentmax > div.row.text-center > div > h3 {
+    font-size: 1.75rem;
+    line-height: 1.35;
+  }
+}
+
+/* line 391, ../sass/project_styles.scss */
+.cta {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+/* line 407, ../sass/project_styles.scss */
+.title-section {
+  color: #4c6d8a;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.675rem;
+  padding: 0.25rem;
+}
+@media (min-width: 48rem) {
+  /* line 407, ../sass/project_styles.scss */
+  .title-section {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
+/* line 420, ../sass/project_styles.scss */
+.benefits-title {
+  color: #4c6d8a;
+  letter-spacing: -.02em;
+  font-size: 18px;
+}
+
+/* line 426, ../sass/project_styles.scss */
+.benefits-subtitle {
+  margin-top: 1.675rem;
+  margin-bottom: 0.375rem;
+  font-size: 1rem;
+}
+@media (min-width: 48rem) {
+  /* line 426, ../sass/project_styles.scss */
+  .benefits-subtitle {
+    font-size: 1.125rem;
+  }
+}
+
+/* line 437, ../sass/project_styles.scss */
+.btn-group-lg > .btn, .btn-lg {
+  padding: 0.625rem 1.5rem;
+  background: #4c6d8a;
+  color: #fff;
+}
+/* line 101, ../sass/foundation_allianz/_settings_allianz.scss */
+.btn-group-lg > .btn:hover, .btn-lg:hover {
+  background: #fff;
+  color: #4c6d8a;
+}
+/* line 106, ../sass/foundation_allianz/_settings_allianz.scss */
+.btn-group-lg > .btn:active, .btn-lg:active {
+  background-color: #172a55;
+  color: #fff;
+}
+@media (min-width: 75rem) {
+  /* line 437, ../sass/project_styles.scss */
+  .btn-group-lg > .btn, .btn-lg {
+    padding: 0.625rem 3.5rem;
+  }
+}
+
+/* line 442, ../sass/project_styles.scss */
+.btn-group-lg > .btn, .btn-lg:hover {
+  background: #fff;
+  border: 2px solid #337ab7;
+  color: #337ab7;
+}
+
+/* line 449, ../sass/project_styles.scss */
+.btn-group-lg > .btn, .btn-lg:active {
+  background: #cccccc;
+}
+
+/* line 453, ../sass/project_styles.scss */
+.main-cta {
+  border-top: 1px solid #4c6d8a;
+  margin: 6% auto 0 auto;
+}
+/* line 457, ../sass/project_styles.scss */
+.main-cta h3 {
+  padding-top: 3%;
+  font-size: 1.275rem;
+  font-weight: bold;
+  max-width: 46rem;
+  margin: 1rem auto;
+}
+@media (min-width: 48rem) {
+  /* line 457, ../sass/project_styles.scss */
+  .main-cta h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin: 1rem auto;
+  }
+}
+@media (min-width: 62rem) {
+  /* line 457, ../sass/project_styles.scss */
+  .main-cta h3 {
+    font-size: 2rem;
+  }
+}
+
+/************************************************************************************
+Icons
+*************************************************************************************/
+/* line 482, ../sass/project_styles.scss */
+.section-benefits i {
+  background-color: #4c6d8a;
+  color: #ffffff;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 1.125rem !important;
+  line-height: 0;
+}
+@media (min-width: 48rem) {
+  /* line 482, ../sass/project_styles.scss */
+  .section-benefits i {
+    font-size: 1.75rem !important;
+    line-height: 2.375rem;
+    padding: 1%;
+  }
+}
+
+/* line 498, ../sass/project_styles.scss */
+.fa {
+  width: 2.25rem;
+  height: 2.25rem;
+  vertical-align: middle;
+  text-align: center;
+  padding: 1.125rem 0.5625rem;
+  line-height: 0;
+}
+@media (min-width: 48rem) {
+  /* line 498, ../sass/project_styles.scss */
+  .fa {
+    width: 3rem;
+    height: 3rem;
+    padding: 1.0625rem;
+    line-height: 1.125;
+  }
+}
+
+/************************************************************************************
+Reviews
+*************************************************************************************/
+/* line 519, ../sass/project_styles.scss */
+div.awards {
+  padding-top: 2%;
+}
+
+/* line 523, ../sass/project_styles.scss */
+div.awards > h3 {
+  font-size: 19px;
+  letter-spacing: -.03em;
+}
+
+/* line 528, ../sass/project_styles.scss */
+div.awards > p {
+  font-size: 0.75rem;
+  font-style: italic;
+  padding: 0% 5%;
+}
+
+/************************************************************************************
+Reviews
+*************************************************************************************/
+/* line 538, ../sass/project_styles.scss */
+div.row.training > div.col-md-9 > p {
+  font-size: 1rem;
+  padding-top: 3%;
+}
+
+/* line 543, ../sass/project_styles.scss */
+#agentmax > div.row.training > div.col-md-9 > p {
+  padding-left: 1.25rem;
+}
+
+/* line 547, ../sass/project_styles.scss */
+body > footer > div > div > div.col-md-10 > p {
+  padding-left: 1.25rem;
+}
+
+/* line 551, ../sass/project_styles.scss */
+div.row.testimonial > p {
+  font-size: 1rem;
+}
+
+/* line 555, ../sass/project_styles.scss */
+h3.reviews {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4c6d8a;
+}
+@media (min-width: 48rem) {
+  /* line 555, ../sass/project_styles.scss */
+  h3.reviews {
+    font-size: 1.5rem;
+  }
+}
+
+/************************************************************************************
+Footer
+*************************************************************************************/
+/* line 568, ../sass/project_styles.scss */
+footer {
+  background-color: #ffffff;
+  padding: 3% 0%;
+  margin-top: 5rem;
+  line-height: 1.2;
+}
+
+/* line 575, ../sass/project_styles.scss */
+footer .terms {
+  display: block;
+  font-size: 0.875rem;
+}
+@media (min-width: 48rem) {
+  /* line 575, ../sass/project_styles.scss */
+  footer .terms {
+    font-size: 1rem;
+  }
+}
+
+/* line 585, ../sass/project_styles.scss */
+.terms span {
+  margin-left: -0.5rem;
+}
+@media (max-width: 62rem) {
+  /* line 585, ../sass/project_styles.scss */
+  .terms span {
+    text-align: center;
+    display: block;
+  }
+}
+
+/************************************************************************************
+MEDIA QUERIES (made before converting to SASS; so look for media queries throughout 
+styles).
+We need to reconfigure all this below to be within the styles above and not have 
+separate media queries.
+*************************************************************************************/
+/* for 61.25rem or less */
+@media screen and (max-width: 61.25rem) {
+  /* line 604, ../sass/project_styles.scss */
+  body > footer > div > div > div.col-md-10 {
+    padding-top: 2%;
+  }
+
+  /* line 607, ../sass/project_styles.scss */
+  #agentmax > div.row.training > div.col-md-9 > p {
+    padding-left: 0px;
+  }
+
+  /* line 610, ../sass/project_styles.scss */
+  body > footer > div > div > div.col-md-10 > p {
+    padding-left: 0px;
+  }
+}
+/* for 30rem or less */
+@media screen and (max-width: 30rem) {
+  /* line 619, ../sass/project_styles.scss */
+  body {
+    padding: 1%;
+  }
+
+  /* line 623, ../sass/project_styles.scss */
+  h1 {
+    font-size: 30px;
+  }
+
+  /* line 627, ../sass/project_styles.scss */
+  .navbar-header {
+    height: 55px !important;
+  }
+
+  /* line 630, ../sass/project_styles.scss */
+  .navbar-brand {
+    width: 270px;
+  }
+
+  /* line 633, ../sass/project_styles.scss */
+  .navbar-header img {
+    width: 45%;
+    padding-left: 5px;
+  }
+
+  /* line 638, ../sass/project_styles.scss */
+  #navbar > ul > li > a {
+    line-height: 20px;
+  }
+
+  /* line 642, ../sass/project_styles.scss */
+  #agentmax > div.row.text-center > div > h3 {
+    margin: 3% 0 6% 0;
+  }
+
+  /* line 646, ../sass/project_styles.scss */
+  .magellan {
+    width: 13%;
+  }
+
+  /* line 650, ../sass/project_styles.scss */
+  .row {
+    padding: 0% 4%;
+  }
+
+  /* line 654, ../sass/project_styles.scss */
+  #agentmax > div.row.testimonial.agencies > h3 > i, #tutorials > i, #agentmax > div.row.agencies > h2 > i {
+    display: none;
+  }
+
+  /* line 659, ../sass/project_styles.scss */
+  footer {
+    align-content: center;
+  }
+}
+/*end of 480*/
+@media screen and (max-width: 320px) {
+  /* line 667, ../sass/project_styles.scss */
+  .navbar-brand {
+    width: 250px;
+  }
+}

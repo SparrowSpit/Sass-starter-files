@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Base Element Styles
+   ========================================================================== */
+
+*, *::before, *::after {
+  @include box-sizing(border-box);
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+
+/* ======== Typography ======== */
+
+html, body {
+	font-family:'PT Sans';
+	color: #666666;
+	line-height: 1.6;
+}
+
+
+h1 {
+	color: #666666;
+	letter-spacing: -.02em;
+}
+
+

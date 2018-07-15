@@ -1,0 +1,671 @@
+@import "foundation_allianz/index";
+
+/* ==========================================================================
+   General Page Styles
+   ========================================================================== */
+
+
+@charset "utf-8";
+/* CSS Document */
+
+p {
+	font-size: 1rem;
+
+		@media (min-width: $d-bp-mediumSmall) {
+			font-size: 1.2rem;
+		}
+}
+
+
+/* ==========================================================================
+   Header/navbar Styles
+   ========================================================================== */
+
+.navbar {
+	height: 130px;
+	border-bottom: solid 5px #dbdbdb;
+
+		@media (max-width: $d-bp-mediumSmall) {
+			height: 190px;
+		}
+
+		@media (max-width: 62rem) {
+			height: 180px;
+		}
+
+}
+
+.navbar-default {
+	background-color: #ffffff;
+}
+
+.navbar-collapse {
+	background-color: #ffffff;
+}
+
+.header-title {
+    margin-top: 3rem;
+
+    	@media (max-width: $d-bp-medium) {
+    		margin-top: 1.5rem;
+    	}
+
+    	p {
+    		font-size: 1.375rem;
+    		text-align: right;
+
+    			@media (max-width: $d-bp-medium) {
+    				font-size: 0.93rem;
+    				line-height: 1.3;
+    			}
+
+    			@media (max-width: 62rem) {
+    				text-align: center;
+    			}
+    	}
+}
+
+.logo-main {
+	@media (max-width: 62rem) {
+		text-align: center;
+    	display: block;
+	}
+}
+
+#navbar > ul > li > a {
+	line-height: 60px;
+}
+
+// top line of text beside logo in header
+.top-tagline {
+	display: block;
+
+		@media (min-width: $d-bp-mediumSmall) {
+			display: inline-block;
+		}
+}
+
+
+/* ==========================================================================
+   Main Content Styles
+   ========================================================================== */
+
+.content {
+	padding-top: 10rem;
+	position: relative;
+
+		@media (max-width: $d-bp-mediumSmall) {
+			padding-top: 12rem;
+		}
+
+		// @media (max-width: $d-bp-mediumSmall) {
+		// 	padding-top: 30rem;
+		// }
+
+		// &:before {
+		// 	content: "";
+		//     background: url("hero_image.jpg") no-repeat 105% 0;
+		//     background-size: cover;
+		//     width: 100%;
+		//     max-width: 100%;
+		//     display: block;
+		//     height: 310px;c
+		//     margin: 0 auto;
+		//     z-index: -9999;
+		//     position: absolute;
+		//     top: 7%;
+
+		//     	@media (max-width: $d-bp-medium) {
+		//     		background: url("hero_image.jpg") no-repeat 105% 0;
+		//     		top: 5%;
+		//     		 height: 240px;
+
+		//     	}
+		// }
+}
+
+// .hero img {
+// 	width: 100%;
+// 	margin-bottom:10px;
+// 	position: absolute;
+// 	top: 6%;
+// 	z-index: -999;
+
+// }
+
+// .top h2 {
+//   color: #666666;
+//   margin: 0;
+//   padding: 20px 20px 0px 0px;
+// }
+
+// .top p {
+//   color: #666666;
+//   margin: 0;
+//   padding: 0px 0px 5px 0px;
+// }
+
+
+// Text over image (it's a little hacky with all the mq's)
+.intro-header {
+    color: $c-primary-blue;
+    max-width: 37rem;
+    padding: 2rem 0 0;
+
+    	@media (min-width: 25.875rem) {
+			position: absolute;
+			left: 7%;
+			top: 12rem;
+			max-width: 15rem;
+    	}
+
+   //  	@media (min-width: 32.5rem) {
+			// top: 13rem;
+   //  	}
+
+    	@media (min-width: 36.25rem) {
+			top: 13rem;
+			max-width: 20rem;
+    	}
+
+    	@media (min-width: 46rem) {
+			left: 6%;
+			top: 13rem;
+			max-width: 26rem;
+    	}
+
+    	@media (min-width: 62.5rem) {
+			top: 15rem;
+			max-width: 31rem;
+    	}
+
+
+    	h2 {
+    		font-weight: bold;
+    		font-size: 2.75rem;
+
+		    	@media (max-width: $d-bp-medium) {
+		    		font-size: 2rem;
+		    	}
+
+		    	@media (max-width: $d-bp-tiny) {
+    				font-size: 1.5rem;
+    			}
+    	}
+
+    	p {
+		    font-size: 1.2rem;
+		    line-height: 1.25;
+		    font-weight: bold;
+		    margin-top: 1rem;
+
+			    @media (min-width: 25.875rem) {
+			    	text-shadow: #D8EAF8 0px 0px 8px;
+			    }
+
+		    	@media (min-width: 32.5rem) {
+					font-size: 1.275rem;
+		    	}			    
+
+		   		@media (min-width: 36.25rem) {
+		    		font-size: 1.75rem;
+		    	}
+
+		    	@media (min-width: 46rem) {
+		    		font-size: 2.125rem;
+		    	}
+
+		    	@media (min-width: $d-bp-medium) {
+		    		font-size: 2.75rem;
+		    	}
+
+
+    	}
+}
+
+.intro {
+	padding: 0 15px;
+	margin-top: 1.75rem;
+}
+
+.intro p {
+	font-size: 1rem;
+
+		@media (min-width: $d-bp-mediumSmall) {
+			font-size: 1.2rem;
+		}
+}
+
+// on mobile the hero image within html is dropped and this 
+// becomes a css bg image.
+.intro-header:before {
+	content: "";
+	background: url('hero_mobile.jpg') no-repeat center;
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: 200px;
+
+		@media (min-width: 25.875rem) {
+			content: "";
+			background: none;
+			height: 0;
+		}
+}
+
+.hero img {
+	display: none;
+
+		@media (min-width: 25.875rem) {
+			display: block;
+		}
+}
+
+div.hero > img {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: .5s;
+
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: .5s;
+
+  -ms-animation-duration: 3s;
+  -ms-animation-delay: .5s;
+
+  -o-animation-duration: 3s;
+  -o-animation-delay: .5s;
+}
+
+// Desc. of Benefits header
+.callout {
+	border-top: 1px solid $c-secondary-blue;
+    border-bottom: 1px solid $c-secondary-blue;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.section-benefits {
+	margin-top: 3rem;
+
+		@media (min-width: $d-bp-mediumSmall) {
+			margin-top: 1rem;
+		}
+}
+
+
+/************************************************************************************
+EGS COLUMNS
+2 columns (on larger screens) of columns after intro text, stacked on small screens
+*************************************************************************************/
+.testimonial, .agencies, .frequently, .training {
+	margin-top: 3%;
+}
+
+// .top, .text-center {
+// 	margin-top: 3%;
+// }
+
+.headcolums{
+	font-size: 1.6875rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 4% 0%;
+
+    	@media (max-width: $d-bp-mediumSmall) {
+    		font-size: 1.375rem;
+    	}
+}
+
+.pro {
+	padding-right: 4%;
+}
+
+.pro > h3 {
+	background-color: $c-secondary-blue;
+}
+.plans {
+	padding: 0% 2%;
+}
+
+.plans > h3 {
+	background-color: $c-secondary-teal;
+}
+// .egs > ul {
+// 	padding-left: 1rem;
+// }
+
+// column subtitles
+.columns-intro {
+	font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding-top: 4%;
+
+    	@media (min-width: $d-bp-medium) {
+    		font-size: 1.15rem;
+    	}
+}
+
+div.row.egs > div.col-md-6 > ul > li {
+	margin-bottom: 2%;
+}
+
+.egs ul {
+	font-size: 1rem;
+	padding-left: 1.125rem;
+
+	    @media (min-width: $d-bp-mediumSmall) {
+    		font-size: 1.2rem;
+    		padding-left: 2.5rem;
+    	}
+}
+
+/************************************************************************************
+CTA	
+*************************************************************************************/
+
+.callout {
+	margin-top: 7%;
+}
+
+#agentmax > div.row.text-center > div > h3{
+	color: #666666;
+	font-size: 1.125rem;
+	font-weight: bold;
+	letter-spacing: -.01em;
+	margin: 3% auto;
+	max-width: 66rem;
+	line-height: 1.275;
+
+		@media (min-width: $d-bp-mediumSmall) {
+			font-size: 1.375rem;
+			line-height: 1.35;
+		}
+
+		@media (min-width: $d-bp-medium) {
+			font-size: 1.75rem;
+			line-height: 1.35;
+		}
+}
+
+.cta {
+	 margin-bottom: 1rem;
+	 padding: 0 1rem;
+}
+
+// .cta .salesphone {
+// 	color: #1f3d7c;
+// }
+// .cta .ctaphone {
+// 	color: $c-secondary-blue;
+//     display: block;
+//     margin: 2% 5px 0 0;
+//     font-size: 20px;
+// }
+
+// main section-header between horiz. rules
+.title-section {
+	color: $c-secondary-blue;
+	text-align:center;
+	font-weight: bold;
+	font-size: 1.675rem;
+	padding: 0.25rem;
+
+		@media (min-width: $d-bp-mediumSmall) {
+			font-size: 2rem;
+			padding: 1rem;
+		}
+}
+
+.benefits-title {
+	color: $c-secondary-blue;
+	letter-spacing: -.02em;
+	font-size:18px;
+}
+
+.benefits-subtitle {
+	margin-top: 1.675rem;
+	margin-bottom: 0.375rem;
+	font-size: 1rem;
+
+		@media (min-width: $d-bp-mediumSmall) {
+			font-size: 1.125rem;
+		}
+}
+
+// primary/cta button styles
+.btn-group-lg > .btn,.btn-lg {
+	@include primaryButton
+
+}
+
+.btn-group-lg>.btn,.btn-lg:hover {
+	background: #fff;
+	border: 2px solid $c-primary-btn;
+	color: $c-primary-btn;
+	// transform: scale(1.0875);
+}
+
+.btn-group-lg > .btn,.btn-lg:active {
+	background: darken(#fff, 20%);
+}
+
+.main-cta {
+	border-top: 1px solid $c-secondary-blue;
+	margin: 6% auto 0 auto;
+
+		h3 {
+			padding-top: 3%;
+			font-size: 1.275rem;
+			font-weight: bold;
+			max-width: 46rem;
+			margin: 1rem auto;
+
+
+				@media (min-width: $d-bp-mediumSmall) {
+					font-size: 1.5rem;
+					line-height: 1.3;
+					margin: 1rem auto;
+				}
+
+				@media (min-width: $d-bp-medium) {
+					font-size: 2rem;
+				}
+		}
+}
+
+
+
+/************************************************************************************
+Icons
+*************************************************************************************/
+.section-benefits i {
+
+	background-color: $c-secondary-blue;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 1.125rem !important;
+    line-height: 0;
+
+    	@media (min-width: $d-bp-mediumSmall) {
+    		font-size: 1.75rem !important;
+    		line-height: 2.375rem;
+    		padding: 1%;
+    	}
+}
+
+.fa {
+	width: 2.25rem;
+    height: 2.25rem;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1.125rem 0.5625rem;
+    line-height: 0;
+
+    	@media (min-width: $d-bp-mediumSmall) {
+    		width: 3rem;
+    		height: 3rem;
+    		padding: 1.0625rem;
+    		line-height: 1.125;
+    	}
+}
+
+
+
+/************************************************************************************
+Reviews
+*************************************************************************************/
+div.awards {
+	padding-top: 2%;
+}
+
+div.awards> h3 {
+	font-size: 19px;
+	letter-spacing: -.03em;
+}
+
+div.awards> p {
+	font-size: 0.75rem;
+    font-style: italic;
+    padding: 0% 5%;
+}
+
+
+/************************************************************************************
+Reviews
+*************************************************************************************/
+div.row.training > div.col-md-9 > p{
+	font-size: 1rem;
+	padding-top: 3%;
+}
+
+#agentmax > div.row.training > div.col-md-9 > p {
+	padding-left: 1.25rem;
+}
+
+body > footer > div > div > div.col-md-10 > p {
+	padding-left: 1.25rem;
+}
+
+div.row.testimonial > p {
+	font-size: 1rem;
+}
+
+h3.reviews {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: $c-secondary-blue;
+
+		@media (min-width: $d-bp-mediumSmall) {
+			font-size: 1.5rem;
+		}
+}
+
+/************************************************************************************
+Footer
+*************************************************************************************/
+footer {
+	background-color: #ffffff;
+	padding: 3% 0%;
+	margin-top: 5rem;
+	line-height: 1.2;
+}
+
+footer .terms {
+	display: block;	
+	font-size: 0.875rem;
+
+		@media (min-width: $d-bp-mediumSmall) {
+			font-size: 1rem;
+		}
+
+}
+
+.terms span {
+	margin-left: -0.5rem;
+
+	@media (max-width: $d-bp-medium) {
+		text-align: center;
+		display: block;
+	}
+
+}
+
+
+/************************************************************************************
+MEDIA QUERIES (made before converting to SASS; so look for media queries throughout 
+styles).
+We need to reconfigure all this below to be within the styles above and not have 
+separate media queries.
+*************************************************************************************/
+/* for 61.25rem or less */
+@media screen and (max-width: 61.25rem) {
+	body > footer > div > div > div.col-md-10{
+		    padding-top: 2%;
+	}
+	#agentmax > div.row.training > div.col-md-9 > p {
+		padding-left: 0px;
+	}
+	body > footer > div > div > div.col-md-10 > p {
+		padding-left: 0px;
+	}
+
+	}
+
+	/* for 30rem or less */
+	@media screen and (max-width: 30rem) {
+		
+	body {
+		padding: 1%;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	.navbar-header {
+		height:55px!important;
+	}
+	.navbar-brand {
+		width:270px
+	}
+	.navbar-header img{
+		width:45%;
+		padding-left: 5px;
+	}
+
+	#navbar > ul > li > a {
+		line-height:20px;
+	}
+
+	#agentmax > div.row.text-center > div > h3{
+		margin: 3% 0 6% 0;
+	}
+
+	.magellan {
+		width: 13%;
+	}
+
+	.row {
+		padding: 0% 4%;
+	}
+		
+	#agentmax > div.row.testimonial.agencies > h3 > i, #tutorials > i, #agentmax > div.row.agencies > h2 > i {
+	display: none;
+	}
+
+
+	footer {
+		align-content: center;
+	}
+
+}/*end of 480*/
+
+
+@media screen and (max-width: 320px) {
+	.navbar-brand {
+		width:250px
+	}
+
+}

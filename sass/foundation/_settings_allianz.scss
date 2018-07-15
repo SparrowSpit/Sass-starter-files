@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Settings
+   ========================================================================== */
+
+
+/* ======== Variables ======== */
+
+// Font Stacks
+$f-font: 'PT Sans', helvetica, arial, sans-serif;
+
+
+// Colors
+$c-primary-blue: #223E7D;
+$c-primary-red: #ED1D28;
+$c-secondary-blue: #4c6d8a;
+$c-secondary-teal: #338890; // was #00A1AF
+$c-secondary-gray: #E2E2E2;
+$c-black: #000;
+$c-white: #fff;
+
+// only button colors
+// this is for a main button (e.g. CTA)
+$c-primary-btn: #337ab7;
+
+// only text colors
+$c-text-body: #666666;
+// general <a> links
+$c-linkColor: #337ab7;
+
+$c-border-gray: #EDEDED;
+
+
+// Breakpoints
+$d-bp-xxLarge: 100rem; // 1600px
+$d-bp-xLarge: 85.9375rem; // 1375px
+$d-bp-large: 75rem; // 1200px
+$d-bp-mediumLarge: 64rem; // 1024px
+$d-bp-medium: 62rem; // 992px
+$d-bp-mediumSmall: 48rem; // 768px
+$d-bp-small: 37.5rem; // 600px
+$d-bp-tiny: 30rem; // 480px
+$d-bp-base: 20rem; // 320px
+
+
+// Transitions for buttons, etc. 
+$x-transition-easing: all 200ms ease-in-out;
+
+
+/* ======== Mixins, Placeholders and Extends ======== */
+
+// Placeholders
+// usage e.g., @extend %button
+%button {
+	transition: $x-transition-easing;
+	display: inline-block;
+	text-decoration: none;
+}
+
+// to remove text used behind a background image
+// such as an h1 logo. It overdoes the hiding
+// but it's better to be too careful. 
+%remove-text {
+    overflow: hidden;
+    text-indent: -99999em;
+    color: transparent;
+}
+
+
+// Inline list with flexbox
+// good to use for nav items
+%inline-list {
+    padding-top: 0px;
+    @include flexbox;
+ 
+    li {
+        margin-right: 1.875rem; // 30px
+        list-style:none;
+        @include flex-direction(column);
+ 
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        @media (min-width: $d-bp-mediumSmall) {
+        	@include flex-direction(row);	
+        }
+    }
+}
+
+
+// Mixins
+
+// adjust these parameters as necessary
+// Usage: @include primaryButton;
+@mixin primaryButton{
+	@extend %button;
+	padding: 0.625rem 1.5rem;
+	background: $c-secondary-blue;
+	color: $c-white;
+	
+		&:hover {
+			background: #fff;
+			color: $c-secondary-blue;
+		}
+
+		&:active {
+			background-color: darken($c-primary-blue, 10%);
+			color: $c-white;
+		}
+
+		// be careful, this padding is dependent on amount of text!
+		@media (min-width: $d-bp-large) {
+			padding: 0.625rem 3.5rem;
+		}
+}
+
+
+// Link Color setting
+// Usage: @include linkColor(#3cf);
+@mixin linkColor($c-linkColor) {
+	color: $c-primary-blue;
+	transition: $x-transition-easing;
+
+	&:hover, &:active, &:focus {
+		color: darken($c-linkColor, 20%);
+	}
+}
+
+
+
+
+
