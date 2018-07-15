@@ -2,4 +2,4 @@
 
 - a simple set of starter files for a project 
 
-## Includes Sass and HTML boilerplate.
+## Includes Sass and HTML boilerplate to get started.
